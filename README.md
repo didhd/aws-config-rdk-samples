@@ -24,9 +24,9 @@ rdk deploy alb-restrict-single-az
 ```
 
 ### 수동 Deploy
-이 리포지토리의 샘플 함수를 사용하여 AWS 리소스의 구성 설정을 평가하는 Config 규칙을 만들 수 있습니다.먼저 AWS Lambda를 사용하여 샘플 코드를 기반으로 하는 함수를 생성합니다.그런 다음 AWS Config를 사용하여 함수와 연결된 규칙을 생성합니다.규칙의 트리거가 발생하면 AWS Config는 함수를 호출하여 AWS 리소스를 평가합니다.
+이 리포지토리의 샘플 함수를 사용하여 AWS 리소스의 구성 설정을 평가하는 Config 규칙을 만들 수 있습니다. 먼저 AWS Lambda를 사용하여 샘플 코드를 기반으로 하는 함수를 생성합니다.그런 다음 AWS Config를 사용하여 함수와 연결된 규칙을 생성합니다. 규칙의 트리거가 발생하면 AWS Config는 함수를 호출하여 AWS 리소스를 평가합니다.
 
-다음 단계를 완료하여 AWS Config에 규칙을 추가하십시오.자세한 단계는 *AWS 구성 개발자 안내서*의 [AWS 구성을 위한 사용자 지정 규칙 개발] (http://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_develop-rules_nodejs.html) 을 참조하십시오.
+다음 단계를 완료하여 AWS Config에 규칙을 추가하십시오. 자세한 단계는 *AWS 구성 개발자 안내서*의 [사용자 지정 Lambda 규칙 (일반 예제)] (http://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_develop-rules_nodejs.html) 을 참조하십시오.
 
 1. AWS Lambda 콘솔로 이동합니다.
 	- AWS 관리 콘솔에 로그인하여 [AWS Lambda 콘솔] (https://console.aws.amazon.com/lambda/) 을 엽니다.
@@ -45,6 +45,6 @@ rdk deploy alb-restrict-single-az
 	- **트리거 유형**의 경우 이 저장소의 *트리거 샘플*을 사용하는 경우 **구성 변경**을 선택하십시오.이 저장소의 *주기적* 샘플을 사용하는 경우 **주기적**을 선택하십시오.
 	- 규칙 매개 변수의 경우 필요한 매개 변수를 지정합니다.
 	— 각 함수의 트리거 유형 및 필수 파라미터는 [AWS Config Rules] (을) 참조하십시오./Rules.md) (파이썬 및 Node.js 함수용) 또는 [AWS 구성 규칙 (자바)] (./자바/규칙_자바.md).
-    — **참고**: AWS Config 콘솔로 사용자 지정 규칙을 생성하면 Lambda를 호출하기 위한 적절한 권한이 자동으로 생성됩니다.AWS CLI로 사용자 지정 규칙을 생성하는 경우, `aws     lambda add-permission` 명령을 사용하여 Lambda 함수를 호출할 수 있는 권한을 AWS Config에 부여해야 합니다.
+    — **참고**: AWS Config 콘솔로 사용자 지정 규칙을 생성하면 Lambda를 호출하기 위한 적절한 권한이 자동으로 생성됩니다.AWS CLI로 사용자 지정 규칙을 생성하는 경우, `aws lambda add-permission` 명령을 사용하여 Lambda 함수를 호출할 수 있는 권한을 AWS Config에 부여해야 합니다.
 
 규칙을 생성하면 해당 규칙이 **규칙** 페이지에 표시되고 AWS Config는 해당 Lambda 함수를 호출합니다.몇 분 후에 평가 결과 요약이 표시됩니다.
