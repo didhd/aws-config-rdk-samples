@@ -34,6 +34,9 @@ APPLICABLE_RESOURCES = ["AWS::EC2::Instance"]
 # Iterate through required tags ensureing each required tag is present,
 # and value is one of the given valid values
 def find_violation(current_tags, reg):
+
+    ### 이부분을 수정하실 수 있습니다.
+
     violation = None
     tag_present = False
     for tag in current_tags:
@@ -73,6 +76,8 @@ def evaluate_compliance(event, configuration_item, valid_rule_parameters):
     2 -- if a None or a list of dictionary is returned, the old evaluation(s) which are not returned in the new evaluation list are returned as NOT_APPLICABLE by the Boilerplate code
     3 -- if None or an empty string, list or dict is returned, the Boilerplate code will put a "shadow" evaluation to feedback that the evaluation took place properly
     """
+
+    ### 이부분을 수정하실 수 있습니다.
 
     if configuration_item["resourceType"] not in APPLICABLE_RESOURCES:
         return "NOT_APPLICABLE"

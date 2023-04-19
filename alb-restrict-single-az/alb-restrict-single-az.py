@@ -47,6 +47,8 @@ def evaluate_compliance(event, configuration_item, valid_rule_parameters):
     3 -- if None or an empty string, list or dict is returned, the Boilerplate code will put a "shadow" evaluation to feedback that the evaluation took place properly
     """
 
+    ### 이부분을 수정하실 수 있습니다.
+
     if configuration_item['resourceType'] != 'AWS::ElasticLoadBalancingV2::LoadBalancer':
         return 'NOT_APPLICABLE'
     if valid_rule_parameters['desiredAvailabilityZone'] == "Multiple Availability Zones":

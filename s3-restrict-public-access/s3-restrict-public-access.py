@@ -93,7 +93,7 @@ CONFIG_ROLE_TIMEOUT_SECONDS = 900
 
 
 def evaluate_compliance(event, configuration_item, valid_rule_parameters):
-
+    # 이부분을 수정하실 수 있습니다.
     client = get_client('s3control', event)
     response = client.get_public_access_block(AccountId=event['accountId'])
     evaluations = []
