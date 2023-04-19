@@ -1,0 +1,13 @@
+{
+  "Version": "1.0",
+  "Parameters": {
+    "RuleName": "ec2-require-name-tag-with-valid-values",
+    "Description": "ec2-require-name-tag-with-valid-values",
+    "SourceRuntime": "python3.8",
+    "CodeKey": "ec2-require-name-tag-with-valid-valuesap-northeast-2.zip",
+    "InputParameters": "{\"desiredNameTagRegex\": \"[a-zA-Z0-9&]+[&|-]+[a-zA-Z0-9&]+\"}",
+    "OptionalParameters": "{}",
+    "SourceEvents": "AWS::EC2::Instance"
+  },
+  "Tags": "[]"
+}

@@ -1,0 +1,13 @@
+{
+  "Version": "1.0",
+  "Parameters": {
+    "RuleName": "alb-restrict-single-az",
+    "Description": "alb-restrict-single-az",
+    "SourceRuntime": "python3.8",
+    "CodeKey": "alb-restrict-single-azap-northeast-2.zip",
+    "InputParameters": "{\"desiredAvailabilityZone\": \"Multiple Availability Zones\"}",
+    "OptionalParameters": "{}",
+    "SourceEvents": "AWS::ElasticLoadBalancingV2::LoadBalancer"
+  },
+  "Tags": "[]"
+}

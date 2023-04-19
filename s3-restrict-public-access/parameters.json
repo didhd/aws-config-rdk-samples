@@ -1,0 +1,12 @@
+{
+    "Version": "1.0",
+    "Parameters": {
+        "RuleName": "s3-restrict-public-access",
+        "SourceRuntime": "python3.7",
+        "CodeKey": "s3-restrict-public-access.zip",
+        "InputParameters": "{}",
+        "OptionalParameters": "{\"BlockPublicAcls\": \"\", \"IgnorePublicAcls\": \"\", \"BlockPublicPolicy\": \"\", \"RestrictPublicBuckets\": \"\"}",
+        "SourcePeriodic": "One_Hour"
+    },
+    "Tags": "[]"
+}
