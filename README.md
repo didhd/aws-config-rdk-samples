@@ -6,7 +6,7 @@ https://aws.amazon.com/ko/blogs/tech/internet-facing-load-balancer-detection/
 **프로덕션에 적용하기 전에 각 규칙을 주의 깊게 검토하고 개발/테스트 환경에서 테스트해 주세요.**
 
 ## 코드 배포하기
-RDK 도구를 활용하여 배포할 수 있습니다.
+RDK 도구를 활용하여 간단한 명령어로 배포할 수 있습니다. 또는 사용자가 직접 수동 Deploy 할 수 있습니다.
 
 ### RDK 설치 및 준비
 RDK를 설치합니다.
